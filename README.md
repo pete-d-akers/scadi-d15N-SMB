@@ -14,12 +14,12 @@ Shi, G. et al. Investigation of post-depositional processing of nitrate in East 
 Sofen, E. D. et al. WAIS Divide ice core suggests sustained changes in the atmospheric formation pathways of sulfate and nitrate since the 19th century in the extratropical Southern Hemisphere. Atmospheric Chemistry and Physics 14, 5749–5769 (2014).
 
 Units for data:
-Latitude and longitude are in decimal degrees
-Elevation is in m based off the REMA DEM
-SMB are surface mass balance in kg m^-2 a^-1
-NO3 is nitrate mass fraction in ppb
-d15N is given NOT in permill units
-Depth for ice cores is in m
-Years for dates are in CE
-Density is kg m^-3
+Latitude and longitude are in decimal degrees.
+Elevation is in m based off the REMA DEM.
+SMB are surface mass balance in kg m^-2 a^-1.
+NO3 is nitrate mass fraction in ppb.
+d15N is given NOT in permill units.
+Depth for ice cores is in m.
+Years for dates are in CE.
+Density is kg m^-3.
 Further description of each column is available on the PANGAEA links.
