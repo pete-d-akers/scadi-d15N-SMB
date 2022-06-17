@@ -1,6 +1,6 @@
 # scadi-d15N-SMB
 R code for analyzing the relationship between nitrate isotopes and surface mass balance in Antarctic snow and ice
-Written by Pete D Akers, May 2019–May 2022
+Written by Pete D Akers, May 2019–May 2022.
 
 This code was used to compile, analyze, and plot figures for a database examining the relationship between ice sheet surface mass balance and nitrate nitrogen isotopes in East Antarctic snow and ice. Primary data for this code should be downloaded from the PANGAEA hosting through the following links:
 https://doi.pangaea.de/10.1594/PANGAEA.941480
