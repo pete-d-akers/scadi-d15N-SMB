@@ -553,51 +553,6 @@ ggplot() +
 
 ##### END MAR ADJUSTMENT #####
 
-#####============Overshoot Pit Plots==============#####
-
-dc04 <- read.csv("dc04_pit.csv", header=TRUE, sep=";") #Frey et al., 2009
-domeA.p7 <- read.csv("domeA_p7.csv", header=TRUE, sep=";") #Shi et al., 2015
-
-#pdf("Figures/DC04 d15N.pdf", height=5, width=8)
-quartz(height=5, width=8)
-ggplot() +
-  theme_classic() + 
-  geom_step(aes(x=dc04$depth.top, y=dc04$d15N*1000), color="dodgerblue4") +
-  geom_smooth(aes(x=dc04$depth.top, y=dc04$d15N*1000), method="loess", color="dodgerblue4",
-              fill=adjustcolor("dodgerblue4", alpha=0.2), span=0.35) +
-  coord_cartesian(xlim = c(0,600), ylim = c(0,400)) +
-  scale_x_continuous(name="Depth (cm)") +
-  scale_y_continuous() +
-  labs(x="Depth (cm)", y="d15N", 
-       title="DC04") +
-  theme(axis.title.y = element_text(size=16),
-        axis.text.y = element_text(size=12),
-        axis.title.x = element_text(size=16),
-        axis.text.x = element_text(size=12),
-        plot.title = element_text(hjust=0.5, size=20))
-#dev.off()
-
-#pdf("Figures/DomeA P7 d15N.pdf", height=5, width=8)
-quartz(height=5, width=8)
-ggplot() +
-  theme_classic() + 
-  geom_step(aes(x=domeA.p7$depth, y=domeA.p7$d15N*1000), color="mediumorchid4") +
-  geom_smooth(aes(x=domeA.p7$depth, y=domeA.p7$d15N*1000), method="loess", color="mediumorchid4",
-              fill=adjustcolor("mediumorchid4", alpha=0.2), span=0.35) +
-  coord_cartesian(xlim = c(0,600), ylim = c(100,500)) +
-  scale_x_continuous(name="Depth (cm)") +
-  scale_y_continuous() +
-  labs(x="Depth (cm)", y="d15N", 
-       title="Dome A P7") +
-  theme(axis.title.y = element_text(size=16),
-        axis.text.y = element_text(size=12),
-        axis.title.x = element_text(size=16),
-        axis.text.x = element_text(size=12),
-        plot.title = element_text(hjust=0.5, size=20))
-#dev.off()
-##### END Overshoot #####
-
-
 #####=======DomeA and WAIS Reconstructions==========#####
 da <- read.csv("DA_iso_ion.csv", header=TRUE, sep=";") #Jiang et al., 2019: DA2005 ice core nitrate
 da.smb <- read.csv("DA_smb.csv", header=TRUE, sep=";") #Jiang et al., 2012: DA2005 ice core density
